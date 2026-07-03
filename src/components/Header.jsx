@@ -1,7 +1,7 @@
 import './Header.css';
 
 const Logo = () => (
-    <img src="public/img/dc-logo-bg.png." alt="Logo" />
+    <img src="img/dc-logo.png" alt="Logo" />
 )
 const Nav = () => (
     <nav>
@@ -23,8 +23,8 @@ const Nav = () => (
 )
 
 export const Header = () => (
-<header>
-    <Logo />
-    <Nav />
-</header>
+    <header>
+        <Logo />
+        <Nav />
+    </header>
 );
