@@ -1,7 +1,7 @@
 import './Header.css';
 
 const Logo = () => (
-    <img src="img/dc-logo-bg.png" alt="Logo" />
+    <img src="public/img/dc-logo-bg.png." alt="Logo" />
 )
 const Nav = () => (
     <nav>
