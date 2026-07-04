@@ -1,7 +1,12 @@
+main {}
+
 /* part black */
 main .black-line {
     background-color: #1c1c1c;
+    padding: 3rem 0;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 main .black-line input::placeholder {
@@ -19,7 +24,21 @@ main .black-line input {
 /* part blue */
 main .blue-line {
     background-color: #0282f9;
+    padding: 2.5rem 0;
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+main .blue-line .shop-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+main .blue-line img {
+    height: 35px;
+    width: auto;
 }
 
 main .blue-line span {
