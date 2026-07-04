@@ -1,11 +1,9 @@
-main {}
-
 /* part black */
 main .black-line {
     background-color: #1c1c1c;
     padding: 3rem 0;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
 }
 
