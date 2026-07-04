@@ -2,7 +2,8 @@ import './Header.css';
 
 const Logo = () => (
     <img src="img/dc-logo.png" alt="Logo" />
-)
+);
+
 const Nav = () => (
     <nav>
         <ul>

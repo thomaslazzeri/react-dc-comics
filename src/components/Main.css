@@ -1,0 +1,27 @@
+/* part black */
+main .black-line {
+    background-color: #1c1c1c;
+    display: flex;
+}
+
+main .black-line input::placeholder {
+    color: #ffffff;
+    opacity: 1;
+}
+
+main .black-line input {
+    background: transparent;
+    border: none;
+    color: #ffffff;
+    outline: none;
+}
+
+/* part blue */
+main .blue-line {
+    background-color: #0282f9;
+    display: flex;
+}
+
+main .blue-line span {
+    color: #ffffff;
+}
