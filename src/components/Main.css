@@ -27,7 +27,7 @@ main .black-line button {
 /* part blue */
 main .blue-line {
     background-color: #0282f9;
-    padding: 35px 10%;
+    padding: 35px 12%;
     display: flex;
     justify-content: space-between;
     align-items: center;
