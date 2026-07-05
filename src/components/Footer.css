@@ -4,6 +4,7 @@ footer {
     flex-direction: column;
 }
 
+/* part dark-comic */
 footer .dark-comic {
     width: 100%;
     position: relative;
@@ -25,30 +26,96 @@ footer .background-image {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    opacity: 0.15;
+    opacity: 0.75;
 }
 
 footer .text {
     position: relative;
-    z-index: 2;
+    z-index: 3;
 }
 
 footer h2 {
     color: #ffffff;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+    font-size: 20px;
 }
 
 footer .text ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    margin-bottom: 5px;
 }
 
 footer .text li {
-    margin-bottom: 8px;
+    margin-bottom: 1px;
 }
 
 footer .text a {
     color: #959595;
     text-decoration: none;
+    font-size: 11px;
+}
+
+footer .logo-dc {
+    position: absolute;
+    right: 15%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    pointer-events: none;
+}
+
+footer .logo-dc img {
+    width: 560px;
+    height: auto;
+    display: block;
+    opacity: 0.90;
+}
+
+/* part grey-line */
+footer .grey-line {
+    width: 100%;
+    background-color: #303030;
+    padding: 30px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .sign button {
+    background-color: transparent;
+    border: 2px solid #0282f9;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+footer .social-box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+footer .follow button {
+    background-color: transparent;
+    border: none;
+    color: #0282f9;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 0;
+    cursor: pointer;
+}
+
+footer .app {
+    display: inline-block;
+    margin-left: 0;
+    vertical-align: middle;
+}
+
+footer .app img {
+    width: 35px;
+    height: auto;
+    cursor: pointer;
 }

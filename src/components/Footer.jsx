@@ -57,23 +57,25 @@ const SecondLine = () => (
         <div className="sign">
             <button>SIGN-UP NOW!</button>
         </div>
-        <div className="follow">
-            <button>FOLLOW US</button>
-        </div>
-        <div className="app">
-            <img src="img/footer-facebook.png" alt="app" />
-        </div>
-        <div className="app">
-            <img src="img/footer-twitter.png" alt="app" />
-        </div>
-        <div className="app">
-            <img src="img/footer-youtube.png" alt="app" />
-        </div>
-        <div className="app">
-            <img src="img/footer-pinterest.png" alt="app" />
-        </div>
-        <div className="app">
-            <img src="img/footer-periscope.png" alt="app" />
+        <div className="social-box">
+            <div className="follow">
+                <button>FOLLOW US</button>
+            </div>
+            <div className="app">
+                <img src="img/footer-facebook.png" alt="app" />
+            </div>
+            <div className="app">
+                <img src="img/footer-twitter.png" alt="app" />
+            </div>
+            <div className="app">
+                <img src="img/footer-youtube.png" alt="app" />
+            </div>
+            <div className="app">
+                <img src="img/footer-pinterest.png" alt="app" />
+            </div>
+            <div className="app">
+                <img src="img/footer-periscope.png" alt="app" />
+            </div>
         </div>
     </div>
 );
