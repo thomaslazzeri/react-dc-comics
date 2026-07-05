@@ -2,9 +2,7 @@ import './Footer.css';
 
 const FirstLine = () => (
     <div className="dark-comic">
-        <div className="background-image">
-            <img src="img/footer-bg.jpg" alt="image" />
-        </div>
+        <div className="background-image"></div>
         <div className="text">
             <h2>DC COMICS</h2>
             <ul>
@@ -15,6 +13,11 @@ const FirstLine = () => (
                 <li><a href="#">Games</a></li>
                 <li><a href="#">Videos</a></li>
                 <li><a href="#">News</a></li>
+            </ul>
+            <h2>SHOP</h2>
+            <ul>
+                <li><a href="#">Shop DC</a></li>
+                <li><a href="#">Shop DC Collectibles</a></li>
             </ul>
         </div>
         <div className="text">
@@ -43,13 +46,6 @@ const FirstLine = () => (
                 <li><a href="#">DC Power Visa</a></li>
             </ul>
         </div>
-        <div className="text">
-            <h2>SHOP</h2>
-            <ul>
-                <li><a href="#">Shop DC</a></li>
-                <li><a href="#">Shop DC Collectibles</a></li>
-            </ul>
-        </div>
         <div className="logo-dc">
             <img src="img/dc-logo-bg.png" alt="Logo" />
         </div>
@@ -61,7 +57,7 @@ const SecondLine = () => (
         <div className="sign">
             <button>SIGN-UP NOW!</button>
         </div>
-        <div classNmae="follow">
+        <div className="follow">
             <button>FOLLOW US</button>
         </div>
         <div className="app">
