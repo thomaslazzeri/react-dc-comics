@@ -1,4 +1,11 @@
 /* part black */
+main {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
 main .black-line {
     background-color: #1c1c1c;
     padding: 40px 10%;
@@ -33,8 +40,9 @@ main .blue-line .shop-item {
 }
 
 main .blue-line img {
-    height: 35px;
-    width: 45px;
+    height: 40px;
+    width: auto;
+    max-width: 55px;
     object-fit: contain;
 }
 
