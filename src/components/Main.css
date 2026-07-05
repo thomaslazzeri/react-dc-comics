@@ -3,28 +3,26 @@ main .black-line {
     background-color: #1c1c1c;
     padding: 40px 10%;
     display: flex;
-    justify-content: left;
+    justify-content: flex-start;
     align-items: center;
 }
 
-main .black-line input::placeholder {
-    color: #ffffff;
-    opacity: 1;
-}
-
-main .black-line input {
+main .black-line button {
     background: transparent;
     border: none;
     color: #ffffff;
     outline: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 /* part blue */
 main .blue-line {
     background-color: #0282f9;
-    padding: 40px 10%;
+    padding: 35px 10%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -36,9 +34,12 @@ main .blue-line .shop-item {
 
 main .blue-line img {
     height: 35px;
-    width: auto;
+    width: 45px;
+    object-fit: contain;
 }
 
 main .blue-line span {
     color: #ffffff;
+    font-size: 13px;
+    font-weight: 400;
 }

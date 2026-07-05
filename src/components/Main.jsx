@@ -2,7 +2,7 @@ import './Main.css';
 
 const FirstLine = () => (
     <div className="black-line">
-        <input type="text" placeholder='--> Content goes here <--' />
+       <button className="content">{"-->"} Content goes here {"<--"}</button>
     </div>
 );
 

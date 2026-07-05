@@ -48,13 +48,13 @@ footer .text ul {
 }
 
 footer .text li {
-    margin-bottom: 1px;
+    margin-bottom: 3px;
 }
 
 footer .text a {
-    color: #959595;
+    color: #757575;
     text-decoration: none;
-    font-size: 11px;
+    font-size: 12px;
 }
 
 footer .logo-dc {
