@@ -1,8 +1,27 @@
 import './Main.css';
+import comics from '../comics'
 
 const FirstLine = () => (
     <div className="black-line">
-        <p className="content">{"-->"} Content goes here {"<--"}</p>
+        {/* <p className="content">{"-->"} Content goes here {"<--"}</p> */}
+
+        {
+
+            comics.map(comic => (
+                <div className="comic-card" key={comic.id}>
+                    <p>{comic.title}</p>
+                    
+                    <img src={comic.thumb} alt="" />
+                </div>
+
+            ))
+
+
+        }
+
+
+
+
     </div>
 );
 

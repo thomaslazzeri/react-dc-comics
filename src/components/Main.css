@@ -12,6 +12,7 @@ main .black-line {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 main .black-line p {
@@ -46,4 +47,14 @@ main .blue-line span {
     color: #ffffff;
     font-size: 13px;
     font-weight: 400;
+}
+
+main .comic-card {
+    width: 300px;
+    height: 350px;
+
+}
+
+.comic-card img {
+    width: 100%;
 }
