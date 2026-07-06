@@ -9,9 +9,10 @@ const FirstLine = () => (
 
             comics.map(comic => (
                 <div className="comic-card" key={comic.id}>
-                    <p>{comic.title}</p>
-                    
                     <img src={comic.thumb} alt="" />
+                    <p>{comic.series}</p>
+
+                    
                 </div>
 
             ))

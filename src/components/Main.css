@@ -55,6 +55,8 @@ main .comic-card {
 
 }
 
-.comic-card img {
-    width: 100%;
+main .comic-card img {
+    height:150px;
+    width: auto;
+    max-width: 200px;
 }
