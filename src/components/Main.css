@@ -8,7 +8,7 @@ main {
 
 main .black-line {
     background-color: #1c1c1c;
-    padding: 40px 27%;
+    padding: 40px 10%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -51,25 +51,25 @@ main .blue-line span {
 
 /* part cards */
 main .comic-card {
-    position: relative;
     display: flex;
-    width: 100px;
-    height: 170px;
+    flex-direction: column;
+    gap: 12px;
+    width: calc((100% / 6) - 17px);
+    flex-grow: 0;
+    flex-shrink: 0;
 }
 
 main .comic-card img {
-    position: absolute;
     width: 100%;
-    top: 0;
-    gap: 3px;
-    display: inline-block;
-    justify-content: center;
+    aspect-ratio: 1 / 1;
+    padding: 30px;
     object-fit: cover;
-    object-position: center;
+    object-position: top;
 
 }
 
 main .comic-card p {
+    margin: 0;
     font-size: 8px;
     text-transform: uppercase;
 }
