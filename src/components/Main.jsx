@@ -2,16 +2,16 @@ import './Main.css';
 import comics from '../comics'
 
 const FirstLine = () => (
-    <div className="black-line">
-        {/* <p className="content">{"-->"} Content goes here {"<--"}</p> */}
-        <div className="big-card">
+    <>
+    <div className="big-card">
             <img src="" alt="" srcset="" />
         </div>
-        <div classname="btn-series">
+    <div className="black-line">
+        {/* <p className="content">{"-->"} Content goes here {"<--"}</p> */}
+        <div className="btn-series">
             <button>Current series</button>
         </div>
         {
-
             comics.map(comic => (
                 <div className="comic-card" key={comic.id}>
                     <img src={comic.thumb} alt="" />
@@ -21,17 +21,12 @@ const FirstLine = () => (
                 </div>
 
             ))
-
-
         }
         <div className="btn-add">
             <button>load more</button>
         </div>
-
-
-
-
     </div>
+    </>
 );
 
 const SecondLine = () => (
