@@ -4,7 +4,9 @@ import comics from '../comics'
 const FirstLine = () => (
     <div className="black-line">
         {/* <p className="content">{"-->"} Content goes here {"<--"}</p> */}
-
+        <div className="big-card">
+            <img src="img/jumbotron.jpg" alt="" srcset="" />
+        </div>
         {
 
             comics.map(comic => (
@@ -12,7 +14,7 @@ const FirstLine = () => (
                     <img src={comic.thumb} alt="" />
                     <p>{comic.series}</p>
 
-                    
+
                 </div>
 
             ))

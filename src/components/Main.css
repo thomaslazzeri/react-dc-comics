@@ -15,6 +15,10 @@ main .black-line {
     flex-wrap: wrap;
 }
 
+main .black-line .big-card {
+    background-image: url(img/jumbotron.jpg);
+}
+
 main .black-line p {
     color: #ffffff;
     font-size: 16px;
