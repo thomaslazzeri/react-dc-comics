@@ -7,6 +7,9 @@ const FirstLine = () => (
         <div className="big-card">
             <img src="" alt="" srcset="" />
         </div>
+        <div classname="btn-series">
+            <button>Current series</button>
+        </div>
         {
 
             comics.map(comic => (
@@ -21,6 +24,9 @@ const FirstLine = () => (
 
 
         }
+        <div className="btn-add">
+            <button>load more</button>
+        </div>
 
 
 
