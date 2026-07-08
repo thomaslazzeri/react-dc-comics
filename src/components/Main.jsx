@@ -5,7 +5,7 @@ const FirstLine = () => (
     <div className="black-line">
         {/* <p className="content">{"-->"} Content goes here {"<--"}</p> */}
         <div className="big-card">
-            <img src="img/jumbotron.jpg" alt="" srcset="" />
+            <img src="" alt="" srcset="" />
         </div>
         {
 
