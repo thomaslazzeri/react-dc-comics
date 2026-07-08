@@ -37,7 +37,7 @@ main .btn-series button {
     text-transform: uppercase;
     font-weight: bold;
     cursor: pointer;
-    top: -14px;
+    top: -19px;
     left: 22%;
     transform: translateX(-50%);
 }
@@ -45,8 +45,9 @@ main .btn-series button {
 main .comic-card {
     display: flex;
     flex-direction: column;
+    align-items: start;
     gap: 10px;
-    width: calc((100% / 6) - 17px);
+    width: calc((100% / 6) - 20px);
     flex-grow: 0;
     flex-shrink: 0;
 }
@@ -63,6 +64,7 @@ main .comic-card p {
     color: #ffffff;
     margin: 0;
     font-size: 12px;
+    text-align: center;
     text-transform: uppercase;
     font-weight: bold;
 }
