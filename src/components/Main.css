@@ -93,31 +93,3 @@ main .btn-add button {
     font-size: 16px;
     font-weight: bold;
 } */
-
-/* part blue */
-main .blue-line {
-    background-color: #0282f9;
-    padding: 35px 12%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-main .blue-line .shop-item {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-main .blue-line img {
-    height: 40px;
-    width: auto;
-    max-width: 55px;
-    object-fit: contain;
-}
-
-main .blue-line span {
-    color: #ffffff;
-    font-size: 13px;
-    font-weight: 400;
-}
