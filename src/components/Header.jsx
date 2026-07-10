@@ -54,10 +54,8 @@ const Nav = () => (
         <ul>
             {navLinks.map((link) => (
                 <li key={link.id}>
-                    <a 
-                        href="#" 
-                        className={link.isActive ? 'active' : ''}
-                    >
+                       <a href="#" 
+                        className={link.isActive ? 'active' : ''}>
                         {link.text}
                     </a>
                 </li>
