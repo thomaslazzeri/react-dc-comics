@@ -1,51 +1,69 @@
 import './Footer.css';
 
+const footerColumns = [
+    {
+        id: 1,
+        sections: [
+            {
+                title: "DC COMICS",
+                links: ["Characters", "Comics", "Movies", "TV", "Games", "Videos", "News"]
+            },
+            {
+                title: "SHOP",
+                links: ["Shop DC", "Shop DC Collectibles"]
+            }
+        ]
+    },
+    {
+        id: 2,
+        sections: [
+            {
+                title: "DC",
+                links: ["Terms Of Use", "Privacy policy (New)", "Ad Choices", "Advertising", "Jobs", "Subscriptions", "Talent Workshops", "CPSC Certificates", "Ratings", "Shop Help", "Contact Us"]
+            }
+        ]
+    },
+    {
+        id: 3,
+        sections: [
+            {
+                title: "SITES",
+                links: ["DC", "MAD Magazine", "DC Kids", "DC Universe", "DC Power Visa"]
+            }
+        ]
+    }
+];
+
+const socialIcons = [
+    "footer-facebook.png",
+    "footer-twitter.png",
+    "footer-youtube.png",
+    "footer-pinterest.png",
+    "footer-periscope.png"
+];
+
 const FirstLine = () => (
     <div className="dark-comic">
         <div className="background-image"></div>
-        <div className="text">
-            <h2>DC COMICS</h2>
-            <ul>
-                <li><a href="#">Characters</a></li>
-                <li><a href="#">Comics</a></li>
-                <li><a href="#">Movies</a></li>
-                <li><a href="#">TV</a></li>
-                <li><a href="#">Games</a></li>
-                <li><a href="#">Videos</a></li>
-                <li><a href="#">News</a></li>
-            </ul>
-            <h2>SHOP</h2>
-            <ul>
-                <li><a href="#">Shop DC</a></li>
-                <li><a href="#">Shop DC Collectibles</a></li>
-            </ul>
-        </div>
-        <div className="text">
-            <h2>DC</h2>
-            <ul>
-                <li><a href="#">Terms Of Use</a></li>
-                <li><a href="#">Privacy policy (New)</a></li>
-                <li><a href="#">Ad Choices</a></li>
-                <li><a href="#">Advertising</a></li>
-                <li><a href="#">Jobs</a></li>
-                <li><a href="#">Subscriptions</a></li>
-                <li><a href="#">Talent Workshops</a></li>
-                <li><a href="#">CPSC Certificates</a></li>
-                <li><a href="#">Ratings</a></li>
-                <li><a href="#">Shop Help</a></li>
-                <li><a href="#">Contact Us</a></li>
-            </ul>
-        </div>
-        <div className="text">
-            <h2>SITES</h2>
-            <ul>
-                <li><a href="#">DC</a></li>
-                <li><a href="#">MAD Magazine</a></li>
-                <li><a href="#">DC Kids</a></li>
-                <li><a href="#">DC Universe</a></li>
-                <li><a href="#">DC Power Visa</a></li>
-            </ul>
-        </div>
+
+        {footerColumns.map((column) => (
+            <div className="text" key={column.id}>
+
+                {column.sections.map((section, secIndex) => (
+                    <div key={secIndex}>
+                        <h2>{section.title}</h2>
+                        <ul>
+                            {section.links.map((link, linkIndex) => (
+                                <li key={linkIndex}>
+                                    <a href="#">{link}</a>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                ))}
+            </div>
+        ))}
+
         <div className="logo-dc">
             <img src="img/dc-logo-bg.png" alt="Logo" />
         </div>
@@ -61,21 +79,11 @@ const SecondLine = () => (
             <div className="follow">
                 <button>FOLLOW US</button>
             </div>
-            <div className="app">
-                <img src="img/footer-facebook.png" alt="app" />
-            </div>
-            <div className="app">
-                <img src="img/footer-twitter.png" alt="app" />
-            </div>
-            <div className="app">
-                <img src="img/footer-youtube.png" alt="app" />
-            </div>
-            <div className="app">
-                <img src="img/footer-pinterest.png" alt="app" />
-            </div>
-            <div className="app">
-                <img src="img/footer-periscope.png" alt="app" />
-            </div>
+            {socialIcons.map((icon, index) => (
+                <div className="app" key={index}>
+                    <img src={`img/${icon}`} alt="social icon" />
+                </div>
+            ))}
         </div>
     </div>
 );
