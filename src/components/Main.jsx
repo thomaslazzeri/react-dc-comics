@@ -1,24 +1,21 @@
 import './Main.css';
-import comics from '../comics'
+import { ComicCard } from './ComicCard';
 
-const BlackLine = () => (
+const BlackLine = (props) => (
     <>
-        <div className="big-card">
-        </div>
+        <div className="big-card"></div>
         <div className="black-line">
-            {/* <p className="content">{"-->"} Content goes here {"<--"}</p> */}
             <div className="btn-series">
                 <button>Current series</button>
             </div>
 
             <div className="comics-grid">
                 {
-                    comics.map(comic => (
-                        <div className="comic-card" key={comic.id}>
-                            <img src={comic.thumb} alt="" />
-                            <p>{comic.series}</p>
-                        </div>
-
+                    props.listaFumetti.map(singleComic => (
+                        <ComicCard 
+                            key={singleComic.id} 
+                            datiFumetto={singleComic}
+                        />
                     ))
                 }
             </div>
@@ -29,9 +26,8 @@ const BlackLine = () => (
     </>
 );
 
-export const Main = () => (
+export const Main = (props) => (
     <main>
-        <BlackLine />
+        <BlackLine listaFumetti={props.listaFumetti} />
     </main>
 );
-

@@ -4,11 +4,12 @@ import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 import { Main } from './components/Main';
 import { BlueBar } from './components/BlueBar';
+import comics from './comics';
 
 const App = () => (
   <>
     <Header />
-    <Main />
+    <Main listaFumetti={comics}/>
     <BlueBar />
     <Footer />
   </>
