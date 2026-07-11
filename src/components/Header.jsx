@@ -20,7 +20,7 @@ const Nav = (props) => (
 
 export const Header = (props) => (
     <header className="header">
-            <Logo />
-            <Nav links={props.links} />
+        <Logo />
+        <Nav links={props.links} />
     </header>
 );

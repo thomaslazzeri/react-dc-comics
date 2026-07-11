@@ -12,8 +12,8 @@ const BlackLine = (props) => (
             <div className="comics-grid">
                 {
                     props.comicsList.map(singleComic => (
-                        <ComicCard 
-                            key={singleComic.id} 
+                        <ComicCard
+                            key={singleComic.id}
                             comicData={singleComic}
                         />
                     ))
