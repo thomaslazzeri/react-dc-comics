@@ -11,10 +11,10 @@ const BlackLine = (props) => (
 
             <div className="comics-grid">
                 {
-                    props.listaFumetti.map(singleComic => (
+                    props.comicsList.map(singleComic => (
                         <ComicCard 
                             key={singleComic.id} 
-                            datiFumetto={singleComic}
+                            comicData={singleComic}
                         />
                     ))
                 }
@@ -28,6 +28,6 @@ const BlackLine = (props) => (
 
 export const Main = (props) => (
     <main>
-        <BlackLine listaFumetti={props.listaFumetti} />
+        <BlackLine comicsList={props.comicsList} />
     </main>
 );

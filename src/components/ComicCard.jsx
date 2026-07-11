@@ -1,8 +1,8 @@
 export const ComicCard = (props) => {
     return (
         <div className="comic-card">
-            <img src={props.datiFumetto.thumb} alt={props.datiFumetto.series} />
-            <p>{props.datiFumetto.series}</p>
+            <img src={props.comicData.thumb} alt={props.comicData.series} />
+            <p>{props.comicData.series}</p>
         </div>
     );
 };
